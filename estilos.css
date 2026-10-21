@@ -1,0 +1,271 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff8f0;
+    color: #35262a;
+}
+
+.encabezado {
+    background: linear-gradient(135deg, #491b2b, #842e43);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 5px solid #d9ad63;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.encabezado p {
+    margin: 8px 0;
+    color: #ffe5c0;
+}
+
+.encabezado span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.bienvenida {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bienvenida h1 {
+    color: #74263b;
+}
+
+.bienvenida p,
+.ayuda {
+    color: #79676a;
+}
+
+.seccion {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #efdfd5;
+    box-shadow: 0 5px 15px rgba(76, 33, 43, 0.06);
+}
+
+.seccion h2,
+.panel-admin h2 {
+    color: #74263b;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #dfc9c1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #d9ad63;
+    border-color: #a95a68;
+}
+
+.producto-fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px;
+    margin: 10px 0;
+    background: #fffaf5;
+    border: 1px solid #f0e3db;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.producto-fila:hover {
+    border-color: #d9ad63;
+    background: #fff4e7;
+}
+
+.producto-fila label {
+    margin: 0;
+    font-size: 14px;
+}
+
+.producto-fila small {
+    display: block;
+    color: #9a6840;
+    margin-top: 4px;
+}
+
+.producto-fila input[type="number"] {
+    width: 85px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+button {
+    padding: 13px 16px;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.btn-principal {
+    width: 100%;
+    color: white;
+    background: linear-gradient(135deg, #70243a, #a53e53);
+    font-size: 16px;
+    box-shadow: 0 5px 12px #70243a30;
+}
+
+.recibo {
+    margin-top: 25px;
+    padding: 22px;
+    background: white;
+    border: 2px dashed #c9a15a;
+    border-radius: 14px;
+    overflow-wrap: anywhere;
+}
+
+.recibo h3 {
+    color: #74263b;
+}
+
+.tabla-recibo {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.tabla-recibo th,
+.tabla-recibo td {
+    padding: 10px 6px;
+    border-bottom: 1px solid #eaded5;
+    text-align: left;
+}
+
+.tabla-recibo th {
+    background: #74263b;
+    color: white;
+}
+
+.panel-admin {
+    margin-top: 35px;
+    padding: 22px;
+    background: #f6e9df;
+    border-radius: 15px;
+}
+
+.botones-admin {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.botones-admin button {
+    flex: 1;
+    min-width: 180px;
+    color: white;
+}
+
+.btn-azul {
+    background: #315d78;
+}
+
+.btn-rojo {
+    background: #a83245;
+}
+
+#tablaHistorial {
+    margin-top: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.item-pedido {
+    padding: 15px;
+    margin: 12px 0;
+    background: #fffaf5;
+    border-left: 5px solid #c9a15a;
+    border-radius: 8px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    margin-top: 45px;
+    padding: 22px;
+    background: #491b2b;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        width: 94%;
+    }
+
+    .seccion {
+        padding: 15px;
+    }
+
+    .producto-fila {
+        gap: 8px;
+    }
+
+    .producto-fila label {
+        font-size: 12px;
+    }
+
+    .producto-fila input[type="number"] {
+        width: 68px;
+    }
+
+    .botones-admin {
+        flex-direction: column;
+    }
+
+    .tabla-recibo th,
+    .tabla-recibo td {
+        padding: 7px 3px;
+        font-size: 12px;
+    }
+}
